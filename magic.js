@@ -75,14 +75,19 @@ console.log(label_opcao)
 
 
 function copiarURL() {
-    // var array_option
+    option1 = document.getElementById('input1').value
+    option2 = document.getElementById('input2').value
+    option3 = document.getElementById('input3').value
+
+    // split join pra remover espaços no url
+    copyUrl = window.location.href + "?" + option1.split(" ").join("") + "+" + option2.split(" ").join("") + "+" + option1.split(" ").join("") + "+"
+
+   if (option1 == ""| option2 == "" | option3 == "") {
+    alert("Sorry! empty input!")
+   } else {
+    navigator.clipboard.writeText(copyUrl)
+    alert("Copy to clipboard: "+copyUrl)
     
-    // array_option = array_option.push(document.getElementById("input1").value)
-    // array_option.push(document.getElementById('input2').value)
-    // array_option.push(document.getElementById('input3').value)
+   }
 
-    // alert("Link para compartilhar: " + window.location.href+"?"+array_option[0]+"+"+array_option[1]+"+"+array_option[2]+"+")
-
-    alert("Em breve")
-    console.log(array_option)
 }
