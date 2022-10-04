@@ -23,3 +23,8 @@ Meu objetivo é praticar um pouco do meu html e o javascript por tras dessa piad
 O site teve ser possível enviar com o layout pronto. Talvez pegando os dados a url, assim como é possível com php. Nesse momento não tenho ideia de como isso será feito.
 
 E lá vamos nós!
+
+# Como Usar?
+
+Adicione os dados nos input clique para compartilhar e já vai está na area de transferencia. Quando entrarem no link vão encontrar apenas as opções para escolher.
+

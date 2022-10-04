@@ -80,7 +80,7 @@ function copiarURL() {
     option3 = document.getElementById('input3').value
 
     // split join pra remover espaços no url
-    copyUrl = window.location.href + "?" + option1.split(" ").join("") + "+" + option2.split(" ").join("") + "+" + option1.split(" ").join("") + "+"
+    copyUrl = window.location.href + "?" + option1.split(" ").join("") + "+" + option2.split(" ").join("") + "+" + option3.split(" ").join("") + "+"
 
    if (option1 == ""| option2 == "" | option3 == "") {
     alert("Sorry! empty input!")
