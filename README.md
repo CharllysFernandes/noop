@@ -24,7 +24,14 @@ O site teve ser possível enviar com o layout pronto. Talvez pegando os dados a 
 
 E lá vamos nós!
 
-# Como Usar?
+## Como Usar?
 
 Adicione os dados nos input clique para compartilhar e já vai está na area de transferencia. Quando entrarem no link vão encontrar apenas as opções para escolher.
+
+Screeshot
+
+![Noop!](https://github.com/CharllysFernandes/noop/blob/main/preview.png)
+
+![Noop!](https://github.com/CharllysFernandes/noop/blob/main/preview.gif)
+
 
