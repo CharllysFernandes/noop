@@ -1,6 +1,14 @@
 const check1 = document.getElementById('switch1');
+const check2 = document.getElementById('switch2')
+const check3 = document.getElementById('switch3')
 
 check1.addEventListener('click', function () {
-    // check1.classList.add('checked')
-    check1.setAttribute('', checked)
+    check2.setAttribute("checked", "")
+    check3.setAttribute("checked", "")
+
 })
+
+function changeSwitch(check, status ) {
+    // use hasAttributes
+        
+}
