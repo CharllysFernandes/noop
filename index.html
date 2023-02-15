@@ -5,47 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLQB20N2LB"></script>
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
+    <title>You can't have it all.</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <style>
+        body {
+            height: 100vh;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
         }
-        gtag('js', new Date());
+        #check1{
+           
+        }
 
-        gtag('config', 'G-PLQB20N2LB');
-    </script>
-    <title>noop!</title>
+        /* Hide the input */
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .check-trail {
+            display: flex;
+            align-items: center;
+            width: 9em;
+            height: 5em;
+            background: #2c3e50;
+            border-radius: 2.5em;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .check-handler {
+            display: flex;
+            margin-left: 0.5em;
+            justify-content: center;
+            align-items: center;
+            width: 4em;
+            height: 4em;
+            background: #34495e;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .check-handler:before {
+            content: "×";
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        input[type=checkbox]:checked+.check-trail {
+            background: #16a085;
+        }
+
+        input[type=checkbox]:checked+.check-trail .check-handler {
+            margin-left: 50%;
+            background: #1abc9c;
+        }
+
+        input[type=checkbox]:checked+.check-trail .check-handler::before {
+            content: "✔";
+        }
+    </style>
 </head>
 
+<body class="container d-flex flex-column gap-3 justify-content-center align-items-center">
+    <h1 class="text-black fw-bolder fs-1">You can't have it all.</h1>   
+    <div class="d-flex flex-row align-items-center gap-3 w-auto">
+        <input id="chck1" type="checkbox" >
+        <label for="chck1" class="check-trail">
+            <span class="check-handler"></span>
+        </label>
+        <input class="text-black fw-medium fs-2 rounded-0 border-0 bg-transparent" id="check1" type="text" value="Insert">
 
-<body class="container d-flex align-items-center justify-content-center">
-    <main>
-        <h1 class="animate__animated animate__fadeIn d-flex fs-1 justify-content-center fw-bold">
-            You can't have it all.
-        </h1>
-        <div class="d-flex flex-column gap-2">
-            <!-- checkbox1 -->
-            <input type="checkbox" id="switch1" switch="bool" />
-            <label for="switch1" data-on-label="Yes" data-off-label="No"></label>
-            <!-- checkbox2 -->
-            <input type="checkbox" id="switch2" switch="bool" />
-            <label for="switch2" data-on-label="Yes" data-off-label="No"></label>
-            <!-- checkbo3 -->
-            <input type="checkbox" id="switch3" switch="bool" />
-            <label for="switch3" data-on-label="Yes" data-off-label="No"></label>
-        </div>
-    </main>
+    </div>
+    <div class="d-flex flex-row align-items-center gap-3 w-auto">
+        <input id="chck2" type="checkbox" >
+        <label for="chck2" class="check-trail">
+            <span class="check-handler"></span>
+        </label>
+        <input class="text-black fw-medium fs-2 rounded-0 border-0 bg-transparent" id="check1" type="text" value="Insert">
 
+    </div>
+    <div class="d-flex flex-row align-items-center gap-3 w-auto">
+        <input id="chck3" type="checkbox" >
+        <label for="chck3" class="check-trail">
+            <span class="check-handler"></span>
+        </label>
+        <input class="text-black fw-medium fs-2 rounded-0 border-0 bg-transparent" id="check1" type="text" value="Insert">
 
-    <script src="./index.js"></script>
+    </div>
+
 </body>
+
+<script src="./index.js"></script>
 
 </html>
